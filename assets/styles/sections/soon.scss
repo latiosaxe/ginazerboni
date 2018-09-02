@@ -1,0 +1,35 @@
+
+.soon_wrapper{
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  padding: 30px 50px 50px 50px;
+  max-width: 600px;
+  background: #FFF;
+  position: absolute;
+  transition: all 1.5s ease-out;
+  transform: translateX(-50%) translateY(-30%);
+  img{
+    opacity: 0;
+    max-width: 90%;
+    display: block;
+    margin: 0 auto 20px;
+    transition: all 1.5s 300ms ease-out;
+    transform: translateY(10%);
+  }
+  p{
+    margin-bottom: 20px;
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+  }
+  &.active{
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%);
+    img{
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
